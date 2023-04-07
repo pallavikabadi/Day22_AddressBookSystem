@@ -6,6 +6,6 @@ public class AddressBookMain {
         System.out.println("--------------------------");
         System.out.println("Contact created in address book is: ");
         AddressBook addressBook = new AddressBook();
-        addressBook.createContact();
+        addressBook.AddContact();
     }
 }

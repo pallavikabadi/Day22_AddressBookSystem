@@ -4,6 +4,15 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class AddressBook {
+    private String AddressbookName;
+
+    public String getAddressbookName() {
+        return AddressbookName;
+    }
+
+    public void setAddressbookName(String addressbookName) {
+        AddressbookName = addressbookName;
+    }
     ArrayList<Contact> contactBook = new ArrayList<>();
     public void AddContact(){
         Scanner sc = new Scanner(System.in);
@@ -98,5 +107,12 @@ public class AddressBook {
             }
         }
         System.out.println("Contact deleted!!!!");
+    }
+    @Override
+    public String toString() {
+        return "AddressBook{" +
+                "AddressbookName='" + AddressbookName + '\'' +
+                ", contactBook=" + contactBook +
+                '}';
     }
 }
